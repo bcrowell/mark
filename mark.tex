@@ -35,7 +35,7 @@
 \newcommand{\separator}{\hspace{0.27\textwidth}\noindent\makebox[\linewidth]{\resizebox{0.3333\linewidth}{1pt}{$\bullet$}}\bigskip}
 % ... https://tex.stackexchange.com/a/130763/6853
 \newenvironment{facing}{\cleartoleftpage}{\clearpage\pagebreak}
-\newenvironment{help}{\pagebreak}{}
+\newenvironment{help}{\clearpage}{}
 \newenvironment{helpsec}{\begin{minipage}[t]{\textwidth}\begin{multicols}{2}}{\end{multicols}\end{minipage}}
 \newenvironment{vocab}{\begin{helpsec}}{\end{helpsec}}
 \newenvironment{translation}{\separator\\\begin{helpsec}\footnotesize}{\end{helpsec}}
@@ -399,7 +399,8 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 
 15 Καὶ γίνεται κατακεῖσθαι αὐτὸν ἐν τῇ οἰκίᾳ αὐτοῦ, καὶ πολλοὶ τελῶναι καὶ ἁμαρτωλοὶ συνανέκειντο τῷ Ἰησοῦ καὶ τοῖς μαθηταῖς αὐτοῦ, ἦσαν γὰρ πολλοὶ καὶ ἠκολούθουν αὐτῷ. 16 καὶ οἱ γραμματεῖς τῶν Φαρισαίων ἰδόντες ὅτι ἐσθίει μετὰ τῶν ἁμαρτωλῶν καὶ τελωνῶν, ἔλεγον τοῖς μαθηταῖς αὐτοῦ 
-«Ὅτι, μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν ἐσθίει; 17 καὶ ἀκούσας ὁ Ἰησοῦς λέγει αὐτοῖς Οὐ χρείαν ἔχουσιν οἱ ἰσχύοντες ἰατροῦ ἀλλ’ οἱ κακῶς ἔχοντες· οὐκ ἦλθον καλέσαι δικαίους ἀλλὰ ἁμαρτωλούς.»
+«Ὅτι, μετὰ τῶν τελωνῶν καὶ ἁμαρτωλῶν ἐσθίει;»
+ 17 καὶ ἀκούσας ὁ Ἰησοῦς λέγει αὐτοῖς, «Οὐ χρείαν ἔχουσιν οἱ ἰσχύοντες ἰατροῦ ἀλλ’ οἱ κακῶς ἔχοντες· οὐκ ἦλθον καλέσαι δικαίους ἀλλὰ ἁμαρτωλούς.»
 
 
 \begin{help}
@@ -408,6 +409,7 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 κεῖμαι -- lie\\
 τέλος -- end, power, tax\\
 ὅτι -- in 2:16, ``why...''\\
+χρεία -- need (noun)
 
 \pagebreak
 
@@ -429,15 +431,19 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 %===================================================================================
 
-18 Καὶ ἦσαν οἱ μαθηταὶ Ἰωάνου καὶ οἱ Φαρισαῖοι νηστεύοντες. καὶ ἔρχονται καὶ λέγουσιν αὐτῷ Διὰ τί οἱ μαθηταὶ Ἰωάνου καὶ οἱ μαθηταὶ τῶν Φαρισαίων νηστεύουσιν, οἱ δὲ σοὶ μαθηταὶ οὐ νηστεύουσιν; 
+18 Καὶ ἦσαν οἱ μαθηταὶ Ἰωάνου καὶ οἱ Φαρισαῖοι νηστεύοντες. καὶ ἔρχονται καὶ λέγουσιν αὐτῷ,
+«Διὰ τί οἱ μαθηταὶ Ἰωάνου καὶ οἱ μαθηταὶ τῶν Φαρισαίων νηστεύουσιν, οἱ δὲ σοὶ μαθηταὶ οὐ νηστεύουσιν;»
 
 \fig{02-19} % https://commons.wikimedia.org/wiki/File:Paolo_Veronese_-_Die_Hochzeit_zu_Kana_-_ca1570.jpeg
 
-19 καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς Μὴ δύνανται οἱ υἱοὶ τοῦ νυμφῶνος ἐν ᾧ ὁ νυμφίος μετ’ αὐτῶν ἐστιν νηστεύειν; ὅσον χρόνον ἔχουσιν τὸν νυμφίον μετ’ αὐτῶν, οὐ δύνανται νηστεύειν. 20 ἐλεύσονται δὲ ἡμέραι ὅταν ἀπαρθῇ ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε νηστεύσουσιν ἐν ἐκείνῃ τῇ ἡμέρᾳ. 21 Οὐδεὶς ἐπίβλημα ῥάκους ἀγνάφου ἐπιράπτει ἐπὶ ἱμάτιον παλαιόν· εἰ δὲ μή, αἴρει τὸ πλήρωμα ἀπ’ αὐτοῦ τὸ καινὸν τοῦ παλαιοῦ, καὶ χεῖρον σχίσμα γίνεται. 22 καὶ οὐδεὶς βάλλει οἶνον νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή, ῥήξει ὁ οἶνος τοὺς ἀσκούς, καὶ ὁ οἶνος ἀπόλλυται καὶ οἱ ἀσκοί. ἀλλὰ οἶνον νέον εἰς ἀσκοὺς καινούς.
+19 καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς, «Μὴ δύνανται οἱ υἱοὶ τοῦ νυμφῶνος ἐν ᾧ ὁ νυμφίος μετ’ αὐτῶν ἐστιν νηστεύειν; ὅσον χρόνον ἔχουσιν τὸν νυμφίον μετ’ αὐτῶν, οὐ δύνανται νηστεύειν. 20 ἐλεύσονται δὲ ἡμέραι ὅταν ἀπαρθῇ ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε νηστεύσουσιν ἐν ἐκείνῃ τῇ ἡμέρᾳ. 21 Οὐδεὶς ἐπίβλημα ῥάκους ἀγνάφου ἐπιράπτει ἐπὶ ἱμάτιον παλαιόν· εἰ δὲ μή, αἴρει τὸ πλήρωμα ἀπ’ αὐτοῦ τὸ καινὸν τοῦ παλαιοῦ, καὶ χεῖρον σχίσμα γίνεται. 22 καὶ οὐδεὶς βάλλει οἶνον νέον εἰς ἀσκοὺς παλαιούς· εἰ δὲ μή, ῥήξει ὁ οἶνος τοὺς ἀσκούς, καὶ ὁ οἶνος ἀπόλλυται καὶ οἱ ἀσκοί. ἀλλὰ οἶνον νέον εἰς ἀσκοὺς καινούς.»
+
+\vfill
 
 \fig{02-23} % https://commons.wikimedia.org/wiki/File:The_Bible_panorama,_or_The_Holy_Scriptures_in_picture_and_story_(1891)_(14785018525).jpg
 
-	23 Καὶ ἐγένετο αὐτὸν ἐν τοῖς σάββασιν παραπορεύεσθαι διὰ τῶν σπορίμων, καὶ οἱ μαθηταὶ αὐτοῦ ἤρξαντο ὁδὸν ποιεῖν τίλλοντες τοὺς στάχυας. 24 καὶ οἱ Φαρισαῖοι ἔλεγον αὐτῷ Ἴδε τί ποιοῦσιν τοῖς σάββασιν ὃ οὐκ ἔξεστιν; 
+	23 Καὶ ἐγένετο αὐτὸν ἐν τοῖς σάββασιν παραπορεύεσθαι διὰ τῶν σπορίμων, καὶ οἱ μαθηταὶ αὐτοῦ ἤρξαντο ὁδὸν ποιεῖν τίλλοντες τοὺς στάχυας.
+ 24 καὶ οἱ Φαρισαῖοι ἔλεγον αὐτῷ, «Ἴδε τί ποιοῦσιν τοῖς σάββασιν ὃ οὐκ ἔξεστιν;»
 
 
 
@@ -445,11 +451,34 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 \begin{help}
 \begin{vocab}
 \emph{common}\\
+ἔξεστι -- it is allowed\\
+καινός -- new, fresh, strange\\
+οἶνος -- wine\\
+ῥάπτω -- sew\\
+χείρων -- worse (irreg. comparative of κακός)\\
+
+\emph{rare}\\
+ἄγναφος -- uncarded; here, unshrunk\\
+ἀσκός -- wine-skin\\
+νηστεύω -- to fast\\
+νυμφίος -- bridegroom\\
+νυμφών -- bridal chamber\\
+ῥάκος -- rag\\
+ῥήγνυμι, ἔρρηξα -- break, shatter \\
+στάχυς -- ear of grain\\
+τίλλω -- pluck\\
+
+\emph{forms}\\
+ἀπαρθῇ = aor. passive subj. of ἀπ+αίρω\\
+ἐλεύσονται -- future middle of ἔρχομαι\\
+ἐπί+βλημα = ἐπί+βάλλω, lit. ``over-throw;'' a covering, patch\\
 
 \end{vocab}
 \begin{translation}
  18 John's disciples and the Pharisees were fasting, and they came and asked him, ``Why do John's disciples and the disciples of the Pharisees fast, but your disciples don't fast?''
+
 19 Jesus said to them, ``Can the groomsmen fast while the bridegroom is with them? As long as they have the bridegroom with them, they can't fast. 20  But the days will come when the bridegroom will be taken away from them, and then they will fast in that day. 21  No one sews a piece of unshrunk cloth on an old garment, or else the patch shrinks and the new tears away from the old, and a worse hole is made. 22  No one puts new wine into old wineskins; or else the new wine will burst the skins, and the wine pours out, and the skins will be destroyed; but they put new wine into fresh wineskins.''
+
 23 He was going on the Sabbath day through the grain fields; and his disciples began, as they went, to pluck the ears of grain. 24 The Pharisees said to him, ``Behold, why do they do that which is not lawful on the Sabbath day?'' 
 
 \end{translation}
@@ -459,14 +488,22 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 %===================================================================================
 
 \begin{facing}
-25 καὶ λέγει αὐτοῖς· Οὐδέποτε ἀνέγνωτε τί ἐποίησεν Δαυείδ, ὅτε χρείαν ἔσχεν καὶ ἐπείνασεν αὐτὸς καὶ οἱ μετ’ αὐτοῦ; 26 πῶς εἰσῆλθεν εἰς τὸν οἶκον τοῦ Θεοῦ ἐπὶ Ἀβιαθὰρ ἀρχιερέως καὶ τοὺς ἄρτους τῆς προθέσεως ἔφαγεν, οὓς οὐκ ἔξεστιν φαγεῖν εἰ μὴ τοὺς ἱερεῖς, καὶ ἔδωκεν καὶ τοῖς σὺν αὐτῷ οὖσιν; 
+25 καὶ λέγει αὐτοῖς· «Οὐδέποτε ἀνέγνωτε τί ἐποίησεν Δαυείδ, ὅτε χρείαν ἔσχεν καὶ ἐπείνασεν αὐτὸς καὶ οἱ μετ’ αὐτοῦ; 26 πῶς εἰσῆλθεν εἰς τὸν οἶκον τοῦ Θεοῦ ἐπὶ Ἀβιαθὰρ ἀρχιερέως καὶ τοὺς ἄρτους τῆς προθέσεως ἔφαγεν, οὓς οὐκ ἔξεστιν φαγεῖν εἰ μὴ τοὺς ἱερεῖς, καὶ ἔδωκεν καὶ τοῖς σὺν αὐτῷ οὖσιν;»
 
-27 καὶ ἔλεγεν αὐτοῖς Τὸ σάββατον διὰ τὸν ἄνθρωπον ἐγένετο, καὶ οὐχ ὁ ἄνθρωπος διὰ τὸ σάββατον· 28 ὥστε κύριός ἐστιν ὁ Υἱὸς τοῦ ἀνθρώπου καὶ τοῦ σαββάτου.
+27 καὶ ἔλεγεν αὐτοῖς, «Τὸ σάββατον διὰ τὸν ἄνθρωπον ἐγένετο, καὶ οὐχ ὁ ἄνθρωπος διὰ τὸ σάββατον· 28 ὥστε κύριός ἐστιν ὁ Υἱὸς τοῦ ἀνθρώπου καὶ τοῦ σαββάτου.»
 
 \begin{help}
 \begin{vocab}
 \emph{common}\\
+ἀναγιγνώσκω, ἀνέγνων  -- read aloud, recite\\
+ἄρτος -- bread\\
+οὐδέποτε -- never\\
+πεινάω -- be hungry\\
+ἱερεύς -- priest\\
+πρόθεσις -- offering, something placed in public\\
 
+\emph{forms}
+ἀρχιερέως = ἀρχ + ἱερεύς\\
 \end{vocab}
 \begin{translation}
  25 He said to them, ``Did you never read what David did when he had need and was hungry--he, and those who were with him? 26  How he entered into God's house at the time of Abiathar the high priest, and ate the show bread, which is not lawful to eat except for the priests, and gave also to those who were with him?''
