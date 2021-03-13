@@ -15,6 +15,8 @@
 \fancyhead[LO]{CHAPTER \thechapter}
 \fancyhead[LE,RO]{\thepage}
 
+\newcommand{\newchapter}{\stepcounter{chapter}}
+
 \usepackage{makeidx}
 \usepackage{multicol}
 \usepackage{enumitem} % for enumerate environments with letters
@@ -32,8 +34,19 @@
 }
 
 
-\newcommand{\separator}{\hspace{0.27\textwidth}\noindent\makebox[\linewidth]{\resizebox{0.3333\linewidth}{1pt}{$\bullet$}}\bigskip}
+\newcommand{\separator}{
+  \vspace{-0.5\baselineskip}% % ...affects the space below, not above -- why?; but cutting this causes the hspace to have no effect
+  \hspace{0.27\textwidth}%
+  \noindent\makebox[\linewidth]{\resizebox{0.3333\linewidth}{1pt}{$\bullet$}}\bigskip%
+  \vspace{-0.5\baselineskip}
+}
 % ... https://tex.stackexchange.com/a/130763/6853
+\newcommand{\sceneseparator}{%
+  \vspace{-0.7\baselineskip}%
+  \hspace{-0.01\textwidth}\noindent\makebox[\linewidth]{\resizebox{0.15\linewidth}{1pt}{$\bullet$}}%
+  \vspace{-0.2\baselineskip}
+}
+%     Used mainly between vocab and translation, but also in some spots as a scene separator.
 \newenvironment{facing}{\cleartoleftpage}{\clearpage\pagebreak}
 \newenvironment{help}{\clearpage}{}
 \newenvironment{helpsec}{\begin{minipage}[t]{\textwidth}\begin{multicols}{2}}{\end{multicols}\end{minipage}}
@@ -46,7 +59,12 @@
 
 %===================================================================================
 
-\chapter{1}
+%===================================================================================
+%===================================================================================
+%                                1
+%===================================================================================
+%===================================================================================
+\newchapter
 
 \begin{facing}
 
@@ -331,7 +349,7 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 %===================================================================================
 %===================================================================================
 
-\chapter{2}
+\newchapter
 
 \begin{facing}
 
@@ -514,14 +532,26 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 
 %===================================================================================
-
-\chapter{3}
+%===================================================================================
+%                                3
+%===================================================================================
+%===================================================================================
+\newchapter
 
 \begin{facing}
 
 \fig{03-01} % https://commons.wikimedia.org/wiki/File:Ilyas_Basim_Khuri_Bazzi_Rahib_-_Jesus_Heals_the_Man_with_a_Withered_Hand_-_Walters_W59231B_-_Full_Page.jpg
 
-1 Καὶ εἰσῆλθεν πάλιν εἰς συναγωγήν, καὶ ἦν ἐκεῖ ἄνθρωπος ἐξηραμμένην ἔχων τὴν χεῖρα· 2 καὶ παρετήρουν αὐτὸν εἰ τοῖς σάββασιν θεραπεύσει αὐτόν, ἵνα κατηγορήσωσιν αὐτοῦ. 3 καὶ λέγει τῷ ἀνθρώπῳ τῷ τὴν χεῖρα ἔχοντι ξηράν Ἔγειρε εἰς τὸ μέσον. 4 καὶ λέγει αὐτοῖς Ἔξεστιν τοῖς σάββασιν ἀγαθὸν ποιῆσαι ἢ κακοποιῆσαι, ψυχὴν σῶσαι ἢ ἀποκτεῖναι; οἱ δὲ ἐσιώπων. 5 καὶ περιβλεψάμενος αὐτοὺς μετ’ ὀργῆς, συνλυπούμενος ἐπὶ τῇ πωρώσει τῆς καρδίας αὐτῶν, λέγει τῷ ἀνθρώπῳ Ἔκτεινον τὴν χεῖρα. καὶ ἐξέτεινεν, καὶ ἀπεκατεστάθη ἡ χεὶρ αὐτοῦ. 6 καὶ ἐξελθόντες οἱ Φαρισαῖοι εὐθὺς μετὰ τῶν Ἡρῳδιανῶν συμβούλιον ἐδίδουν κατ’ αὐτοῦ, ὅπως αὐτὸν ἀπολέσωσιν. 	7 Καὶ ὁ Ἰησοῦς μετὰ τῶν μαθητῶν αὐτοῦ ἀνεχώρησεν πρὸς τὴν θάλασσαν· καὶ πολὺ πλῆθος ἀπὸ τῆς Γαλιλαίας ἠκολούθησεν· καὶ ἀπὸ τῆς Ἰουδαίας 8 καὶ ἀπὸ Ἱεροσολύμων καὶ ἀπὸ τῆς Ἰδουμαίας καὶ πέραν τοῦ Ἰορδάνου καὶ περὶ Τύρον καὶ Σιδῶνα, πλῆθος πολύ, ἀκούοντες ὅσα ποιεῖ, ἦλθον πρὸς αὐτόν. 
+1 Καὶ εἰσῆλθεν πάλιν εἰς συναγωγήν, καὶ ἦν ἐκεῖ ἄνθρωπος ἐξηραμμένην ἔχων τὴν χεῖρα· 2 καὶ παρετήρουν αὐτὸν εἰ τοῖς σάββασιν θεραπεύσει αὐτόν, ἵνα κατηγορήσωσιν αὐτοῦ. 
+3 καὶ λέγει τῷ ἀνθρώπῳ τῷ τὴν χεῖρα ἔχοντι ξηράν, «Ἔγειρε εἰς τὸ μέσον.»
+4 καὶ λέγει αὐτοῖς, «Ἔξεστιν τοῖς σάββασιν ἀγαθὸν ποιῆσαι ἢ κακοποιῆσαι, ψυχὴν σῶσαι ἢ ἀποκτεῖναι;» οἱ δὲ ἐσιώπων.
+5 καὶ περιβλεψάμενος αὐτοὺς μετ’ ὀργῆς, συνλυπούμενος ἐπὶ τῇ πωρώσει τῆς καρδίας αὐτῶν, λέγει τῷ ἀνθρώπῳ «Ἔκτεινον τὴν χεῖρα.»
+ καὶ ἐξέτεινεν, καὶ ἀπεκατεστάθη ἡ χεὶρ αὐτοῦ. 
+6 καὶ ἐξελθόντες οἱ Φαρισαῖοι εὐθὺς μετὰ τῶν Ἡρῳδιανῶν συμβούλιον ἐδίδουν κατ’ αὐτοῦ, ὅπως αὐτὸν ἀπολέσωσιν. 	
+
+\sceneseparator
+
+7 Καὶ ὁ Ἰησοῦς μετὰ τῶν μαθητῶν αὐτοῦ ἀνεχώρησεν πρὸς τὴν θάλασσαν· καὶ πολὺ πλῆθος ἀπὸ τῆς Γαλιλαίας ἠκολούθησεν· καὶ ἀπὸ τῆς Ἰουδαίας 8 καὶ ἀπὸ Ἱεροσολύμων καὶ ἀπὸ τῆς Ἰδουμαίας καὶ πέραν τοῦ Ἰορδάνου καὶ περὶ Τύρον καὶ Σιδῶνα, πλῆθος πολύ, ἀκούοντες ὅσα ποιεῖ, ἦλθον πρὸς αὐτόν. 
 
 \fig{03-09} % https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Preaches_in_a_Ship_(J%C3%A9sus_pr%C3%A8che_dans_une_barque)_-_James_Tissot_-_overall.jpg
 
@@ -530,9 +560,41 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 \begin{help}
 \begin{vocab}
 \emph{common}\\
+ἀγορεύω -- speak against in assembly\\
+ἵνα -- in order that\\
+θλίβω -- press\\
+καθίστημι = κατα + ἵστημι -- set down, establish\\
+καρτερέω -- persist, be patient\\
+ξηρός -- dry\\
+μάστιξ -- whip; metaph., plague\\
+πλῆθος -- a multitude\\
+σιωπάω -- to be silent\\
+τηρέω -- keep, guard, watch\\
+χωρέω -- go, come\\
 
+\emph{rare}\\
+πώρωσις -- petrification, callousness\\
+ξηραίνω -- to dry, wither\\
+
+\emph{forms}\\
+ἀναχωρέω = ἀνα + χωρέω, go back, withdraw\\
+ἀποκαθίστημι = ἀπο + καθίστημι, repair, reestablish\\
+ἅψωνται = aor.~middle subj. of ἅπτω\\
+ἐξηραμμένην -- perf. middle-passive participle\\
+ἔχων = having\\
+κατηγορέω = κατα (against) + ἀγορεύω \\
+παρατηρέω = παρα (intensifier) + τηρέω\\
+προσκαρτερέω = προσ + καρτερέω, persist obstinately in\\
 \end{vocab}
 \begin{translation}
+
+ 1 He entered again into the synagogue, and there was a man there whose hand was withered. 2 They watched him, whether he would heal him on the Sabbath day, that they might accuse him. 
+3 He said to the man whose hand was withered, ``Stand up.'' 4 He said to them, ``Is it lawful on the Sabbath day to do good or to do harm? To save a life or to kill?'' But they were silent. 5 When he had looked around at them with anger, being grieved at the hardening of their hearts, he said to the man, ``Stretch out your hand.'' He stretched it out, and his hand was restored as healthy as the other. 
+6 The Pharisees went out, and immediately conspired with the Herodians against him, how they might destroy him.
+
+7 Jesus withdrew to the sea with his disciples; and a great multitude followed him from Galilee, from Judea, 8 from Jerusalem, from Idumaea, beyond the Jordan, and those from around Tyre and Sidon. A great multitude, hearing what great things\footnote{ὅσα ποιεῖ = lit.~how many things} he did, came to him. 
+
+9 He spoke to his disciples that a little boat should stay near him because of the crowd, so that they wouldn't press on him. 10 For he had healed many, so that as many as had diseases pressed on him that they might touch him.
 
 \end{translation}
 \end{help}
@@ -556,6 +618,10 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 \end{vocab}
 \begin{translation}
+ 11 The unclean spirits, whenever they saw him, fell down before him and cried, ``You are the Son of God!'' 12 He sternly warned them that they should not make him known.
+
+13 He went up into the mountain and called to himself those whom he wanted, and they went to him. 14 He appointed twelve, that they might be with him, and that he might send them out to preach 15 and to have authority to heal sicknesses and to cast out demons: 16 Simon (to whom he gave the name Peter); 17 James the son of Zebedee; and John, the brother of James, (whom he called Boanerges, which means, Sons of Thunder); 18 Andrew; Philip; Bartholomew; Matthew; Thomas; James, the son of Alphaeus; Thaddaeus; Simon the Zealot; 19 and Judas Iscariot, who also betrayed him.
+Then he came into a house. 20 The multitude came together again, so that they could not so much as eat bread. 21 When his friends heard it, they went out to seize him; for they said, ``He is insane.''
 
 \end{translation}
 \end{help}
@@ -573,6 +639,8 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 28 Ἀμὴν λέγω ὑμῖν ὅτι πάντα ἀφεθήσεται τοῖς υἱοῖς τῶν ἀνθρώπων, τὰ ἁμαρτήματα καὶ αἱ βλασφημίαι, ὅσα ἐὰν βλασφημήσωσιν· 29 ὃς δ’ ἂν βλασφημήσῃ εἰς τὸ Πνεῦμα τὸ Ἅγιον, οὐκ ἔχει ἄφεσιν εἰς τὸν αἰῶνα, ἀλλὰ ἔνοχός ἐστιν αἰωνίου ἁμαρτήματος. 30 ὅτι ἔλεγον Πνεῦμα ἀκάθαρτον ἔχει. 
 
+\sceneseparator\vfill
+
 31 Καὶ ἔρχονται ἡ μήτηρ αὐτοῦ καὶ οἱ ἀδελφοὶ αὐτοῦ, καὶ ἔξω στήκοντες ἀπέστειλαν πρὸς αὐτὸν καλοῦντες αὐτόν. 32 καὶ ἐκάθητο περὶ αὐτὸν ὄχλος, καὶ λέγουσιν αὐτῷ Ἰδοὺ ἡ μήτηρ σου καὶ οἱ ἀδελφοί σου καὶ αἱ ἀδελφαί σου ἔξω ζητοῦσίν σε. 
 
 33 καὶ ἀποκριθεὶς αὐτοῖς λέγει Τίς ἐστιν ἡ μήτηρ μου καὶ οἱ ἀδελφοί; 34 καὶ περιβλεψάμενος τοὺς περὶ αὐτὸν κύκλῳ καθημένους λέγει Ἴδε ἡ μήτηρ μου καὶ οἱ ἀδελφοί μου. 35 ὃς ἂν ποιήσῃ τὸ θέλημα τοῦ Θεοῦ, οὗτος ἀδελφός μου καὶ ἀδελφὴ καὶ μήτηρ ἐστίν.
@@ -584,6 +652,15 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 \end{vocab}
 \begin{translation}
+22 The scribes who came down from Jerusalem said, ``He has Beelzebul,'' and, ``By the prince of the demons he casts out the demons.''
+
+23 He summoned them and said to them in parables, ``How can Satan cast out Satan? 24  If a kingdom is divided against itself, that kingdom cannot stand. 25  If a house is divided against itself, that house cannot stand. 26  If Satan has risen up against himself, and is divided, he can't stand, but has an end. 27  But no one can enter into the house of the strong man to plunder unless he first binds the strong man; then he will plunder his house.
+
+28  ``Most certainly I tell you, all sins of the descendants of man will be forgiven, including their blasphemies with which they may blaspheme; 29  but whoever may blaspheme against the Holy Spirit never has forgiveness, but is subject to eternal condemnation.'' 30 --because they said, ``He has an unclean spirit.''
+
+31 His mother and his brothers came, and standing outside, they sent to him, calling him. 32 A multitude was sitting around him, and they told him, ``Behold, your mother, your brothers, and your sisters are outside looking for you.''
+
+33 He answered them, ``Who are my mother and my brothers?'' 34 Looking around at those who sat around him, he said, ``Behold, my mother and my brothers! 35  For whoever does the will of God is my brother, my sister, and mother.'' 
 
 \end{translation}
 \end{help}
