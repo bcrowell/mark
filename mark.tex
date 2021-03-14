@@ -9,7 +9,7 @@
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-%\fancyhf{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[RE]{ΛΟΓΟΣ \thechapter}
 \fancyhead[LO]{CHAPTER \thechapter}
@@ -542,6 +542,8 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 
 \fig{03-01} % https://commons.wikimedia.org/wiki/File:Ilyas_Basim_Khuri_Bazzi_Rahib_-_Jesus_Heals_the_Man_with_a_Withered_Hand_-_Walters_W59231B_-_Full_Page.jpg
 
+\enlargethispage{\baselineskip}
+
 1 Καὶ εἰσῆλθεν πάλιν εἰς συναγωγήν, καὶ ἦν ἐκεῖ ἄνθρωπος ἐξηραμμένην ἔχων τὴν χεῖρα· 2 καὶ παρετήρουν αὐτὸν εἰ τοῖς σάββασιν θεραπεύσει αὐτόν, ἵνα κατηγορήσωσιν αὐτοῦ. 
 3 καὶ λέγει τῷ ἀνθρώπῳ τῷ τὴν χεῖρα ἔχοντι ξηράν, «Ἔγειρε εἰς τὸ μέσον.»
 4 καὶ λέγει αὐτοῖς, «Ἔξεστιν τοῖς σάββασιν ἀγαθὸν ποιῆσαι ἢ κακοποιῆσαι, ψυχὴν σῶσαι ἢ ἀποκτεῖναι;» οἱ δὲ ἐσιώπων.
@@ -552,6 +554,8 @@ They went into Capernaum, and immediately on the Sabbath day he entered into the
 \sceneseparator
 
 7 Καὶ ὁ Ἰησοῦς μετὰ τῶν μαθητῶν αὐτοῦ ἀνεχώρησεν πρὸς τὴν θάλασσαν· καὶ πολὺ πλῆθος ἀπὸ τῆς Γαλιλαίας ἠκολούθησεν· καὶ ἀπὸ τῆς Ἰουδαίας 8 καὶ ἀπὸ Ἱεροσολύμων καὶ ἀπὸ τῆς Ἰδουμαίας καὶ πέραν τοῦ Ἰορδάνου καὶ περὶ Τύρον καὶ Σιδῶνα, πλῆθος πολύ, ἀκούοντες ὅσα ποιεῖ, ἦλθον πρὸς αὐτόν. 
+
+\enlargethispage{\baselineskip}
 
 \fig{03-09} % https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Jesus_Preaches_in_a_Ship_(J%C3%A9sus_pr%C3%A8che_dans_une_barque)_-_James_Tissot_-_overall.jpg
 
@@ -701,24 +705,48 @@ Then he came into a house. 20 The multitude came together again, so that they co
 
 \enlargethispage{\baselineskip}
 
-3 Ἀκούετε. ἰδοὺ ἐξῆλθεν ὁ σπείρων σπεῖραι. 4 καὶ ἐγένετο ἐν τῷ σπείρειν ὃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτό. 5 καὶ ἄλλο ἔπεσεν ἐπὶ τὸ πετρῶδες ὅπου οὐκ εἶχεν γῆν πολλήν, καὶ εὐθὺς ἐξανέτειλεν διὰ τὸ μὴ ἔχειν βάθος γῆς· 6 καὶ ὅτε ἀνέτειλεν ὁ ἥλιος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη. 7 καὶ ἄλλο ἔπεσεν εἰς τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ συνέπνιξαν αὐτό, καὶ καρπὸν οὐκ ἔδωκεν. 8 καὶ ἄλλα ἔπεσεν εἰς τὴν γῆν τὴν καλήν, καὶ ἐδίδου καρπὸν ἀναβαίνοντα καὶ αὐξανόμενα, καὶ ἔφερεν εἰς τριάκοντα καὶ ἐν ἑξήκοντα καὶ ἐν ἑκατόν. 9 καὶ ἔλεγεν Ὃς ἔχει ὦτα ἀκούειν ἀκουέτω. 
+3 «Ἀκούετε. ἰδοὺ ἐξῆλθεν ὁ σπείρων σπεῖραι. 4 καὶ ἐγένετο ἐν τῷ σπείρειν ὃ μὲν ἔπεσεν παρὰ τὴν ὁδόν, καὶ ἦλθεν τὰ πετεινὰ καὶ κατέφαγεν αὐτό. 5 καὶ ἄλλο ἔπεσεν ἐπὶ τὸ πετρῶδες ὅπου οὐκ εἶχεν γῆν πολλήν, καὶ εὐθὺς ἐξανέτειλεν διὰ τὸ μὴ ἔχειν βάθος γῆς· 6 καὶ ὅτε ἀνέτειλεν ὁ ἥλιος ἐκαυματίσθη, καὶ διὰ τὸ μὴ ἔχειν ῥίζαν ἐξηράνθη. 7 καὶ ἄλλο ἔπεσεν εἰς τὰς ἀκάνθας, καὶ ἀνέβησαν αἱ ἄκανθαι καὶ συνέπνιξαν αὐτό, καὶ καρπὸν οὐκ ἔδωκεν. 8 καὶ ἄλλα ἔπεσεν εἰς τὴν γῆν τὴν καλήν, καὶ ἐδίδου καρπὸν ἀναβαίνοντα καὶ αὐξανόμενα, καὶ ἔφερεν εἰς τριάκοντα καὶ ἐν ἑξήκοντα καὶ ἐν ἑκατόν.» 
+9 καὶ ἔλεγεν, «Ὃς ἔχει ὦτα ἀκούειν ἀκουέτω.»
 
 \fig{04-03} % https://commons.wikimedia.org/wiki/File:The_Sower_(The_Parables_of_Our_Lord_and_Saviour_Jesus_Christ)_MET_DP835795.jpg
 
 \enlargethispage{\baselineskip}
 
-10 Καὶ ὅτε ἐγένετο κατὰ μόνας, ἠρώτων αὐτὸν οἱ περὶ αὐτὸν σὺν τοῖς δώδεκα τὰς παραβολάς. 11 καὶ ἔλεγεν αὐτοῖς Ὑμῖν τὸ μυστήριον δέδοται τῆς βασιλείας τοῦ Θεοῦ· ἐκείνοις δὲ τοῖς ἔξω ἐν παραβολαῖς τὰ πάντα γίνεται, 12 ἵνα 
+10 Καὶ ὅτε ἐγένετο κατὰ μόνας, ἠρώτων αὐτὸν οἱ περὶ αὐτὸν σὺν τοῖς δώδεκα τὰς παραβολάς.
+11 καὶ ἔλεγεν αὐτοῖς, «Ὑμῖν τὸ μυστήριον δέδοται τῆς βασιλείας τοῦ Θεοῦ· ἐκείνοις δὲ τοῖς ἔξω ἐν παραβολαῖς τὰ πάντα γίνεται, 12 ἵνα 
 	βλέποντες βλέπωσιν καὶ μὴ ἴδωσιν, 
 	καὶ ἀκούοντες ἀκούωσιν καὶ μὴ συνιῶσιν, 
-		μή ποτε ἐπιστρέψωσιν καὶ ἀφεθῇ αὐτοῖς.
+		μή ποτε ἐπιστρέψωσιν καὶ ἀφεθῇ αὐτοῖς.»
 
 \begin{help}
 \begin{vocab}
 \emph{common}\\
+καίω -- burn\\
+πέτομαι -- fly (cogn.~πίπτω)\\
+πίπτω -- fall\\
+ῥίζα -- root\\
+τέλλω -- cause to arise\\
+
+\emph{rare}\\
+ἄκανθα = ἀκή (point) + ἄνθος, thorn\\
+καυματίζω -- burn, scorch\\
+πετεινός -- bird old enough to fly, winged bird\\
+ξηραίνω -- to dry, wither\\
+συνέπνιξαν = form of συμπνίγω, to crush, choke\\
+
+\emph{forms}\\
+ἐμβαίνω = ἐν + βαίνω\\
+ἔπεσα -- aor.~ of πίπτω\\
+ἐξανατέλλω = ἐξανα + τέλλω, spring up from\\
+συνάγω = συν + άγω\\
 
 \end{vocab}
 \begin{translation}
+ 1 Again he began to teach by the seaside. A great multitude was gathered to him, so that he entered into a boat in the sea and sat down. All the multitude were on the land by the sea. 2 He taught them many things in parables, and told them in his teaching, 
 
+3  ``Listen! Behold, the farmer went out to sow. 4  As he sowed, some seed fell by the road, and the birds came and devoured it. 5  Others fell on the rocky ground, where it had little soil, and immediately it sprang up, because it had no depth of soil. 6  When the sun had risen, it was scorched; and because it had no root, it withered away. 7  Others fell among the thorns, and the thorns grew up and choked it, and it yielded no fruit. 8  Others fell into the good ground and yielded fruit, growing up and increasing. Some produced thirty times, some sixty times, and some one hundred times as much.'' 9 He said, ``Whoever has ears to hear, let him hear.''
+
+10 When he was alone, those who were around him with the twelve asked him about the parables. 11 He said to them, ``To you is given the mystery of God's Kingdom, but to those who are outside, all things are done in parables, 12  that `seeing they may see and not perceive, and hearing they may hear and not understand, lest perhaps they should turn again, and their sins should be forgiven them.' ''
 \end{translation}
 \end{help}
 \end{facing}
@@ -748,7 +776,13 @@ Then he came into a house. 20 The multitude came together again, so that they co
 
 \end{vocab}
 \begin{translation}
+ 13 He said to them, ``Don't you understand this parable? How will you understand all of the parables? 14  The farmer sows the word. 15  The ones by the road are the ones where the word is sown; and when they have heard, immediately Satan comes and takes away the word which has been sown in them. 16  These in the same way are those who are sown on the rocky places, who, when they have heard the word, immediately receive it with joy. 17  They have no root in themselves, but are short-lived. When oppression or persecution arises because of the word, immediately they stumble. 
 
+18  Others are those who are sown among the thorns. These are those who have heard the word, 19  and the cares of this age, and the deceitfulness of riches, and the lusts of other things entering in choke the word, and it becomes unfruitful. 20  Those which were sown on the good ground are those who hear the word, accept it, and bear fruit, some thirty times, some sixty times, and some one hundred times.''
+
+21 He said to them, ``Is a lamp brought to be put under a basket  or under a bed? Isn't it put on a stand? 22  For there is nothing hidden except that it should be made known, neither was anything made secret but that it should come to light. 23  If any man has ears to hear, let him hear.''
+
+24 He said to them, ``Take heed what you hear. With whatever measure you measure, it will be measured to you; and more will be given to you who hear. 25  For whoever has, to him more will be given; and he who doesn't have, even that which he has will be taken away from him.''
 \end{translation}
 \end{help}
 \end{facing}
@@ -784,6 +818,11 @@ Then he came into a house. 20 The multitude came together again, so that they co
 
 \end{vocab}
 \begin{translation}
+ 26 He said, ``God's Kingdom is as if a man should cast seed on the earth, 27  and should sleep and rise night and day, and the seed should spring up and grow, though he doesn't know how. 28  For the earth bears fruit by itself: first the blade, then the ear, then the full grain in the ear. 29  But when the fruit is ripe, immediately he puts in the sickle, because the harvest has come.''
+
+30 He said, ``How will we liken God's Kingdom? Or with what parable will we illustrate it? 31  It's like a grain of mustard seed, which, when it is sown in the earth, though it is less than all the seeds that are on the earth, 32  yet when it is sown, grows up and becomes greater than all the herbs, and puts out great branches, so that the birds of the sky can lodge under its shadow.''
+
+33 With many such parables he spoke the word to them, as they were able to hear it. 34 Without a parable he didn't speak to them; but privately to his own disciples he explained everything. 
 
 \end{translation}
 \end{help}
@@ -806,8 +845,15 @@ Then he came into a house. 20 The multitude came together again, so that they co
 \begin{vocab}
 \emph{common}\\
 
+\emph{forms}\\
+συνάγω = συν + άγω \\
 \end{vocab}
 \begin{translation}
+35 On that day, when evening had come, he said to them, ``Let's go over to the other side.'' 36 Leaving the multitude, they took him with them, even as he was, in the boat. Other small boats were also with him. 37 A big wind storm arose, and the waves beat into the boat, so much that the boat was already filled. 38 He himself was in the stern, asleep on the cushion; and they woke him up and asked him, ``Teacher, don't you care that we are dying?''
+
+39 He awoke and rebuked the wind, and said to the sea, ``Peace! Be still!'' The wind ceased and there was a great calm. 40 He said to them, ``Why are you so afraid? How is it that you have no faith?''
+
+41 They were greatly afraid and said to one another, ``Who then is this, that even the wind and the sea obey him?'' 
 
 \end{translation}
 \end{help}
